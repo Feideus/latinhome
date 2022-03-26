@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {HttpClient, HttpRequest} from "@angular/common/http";
+import {Component, OnInit} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'shalom-accueil',
@@ -8,20 +8,23 @@ import {HttpClient, HttpRequest} from "@angular/common/http";
 })
 export class AccueilComponent implements OnInit {
 
-  title:string = "Hello World";
-  _httpError:any;
+  title: string = "";
 
-  constructor(private readonly http: HttpClient) { }
+  constructor(private readonly http: HttpClient) {
+  }
 
   ngOnInit(): void {
     this.loadTitle();
   }
 
-  loadTitle(){
+  loadTitle() {
 
-    this.http.get('/api',{responseType: 'text'})
-      .subscribe(res => {
-      this.title = res;
-    });
+    this.http.get('/api', {responseType: 'text'})
+      .subscribe({
+        next: (res) => {
+          this.title = res;
+      }});
   }
+
+  //res =>
 }

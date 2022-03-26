@@ -1,0 +1,26 @@
+.shalom-header{
+  width:100%;
+  height: 5em;
+  display: flex;
+  background: white;
+  text-align: center;
+  justify-content: space-between;
+
+  .gestion-profil{
+    margin:1em;
+
+    .gestion-profil-icon{
+      width: 2em;
+      height: 2em;
+      font-size: 3em;
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+    }
+  }
+
+
+  .shalom-logo{
+    margin: 1em;
+  }
+}
