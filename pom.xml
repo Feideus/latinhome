@@ -11,12 +11,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>shalomalerhem</artifactId>
+    <artifactId>latinhome</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>shalomalerhem</name>
+    <name>latinhome</name>
     <description>Demo project for Spring Boot</description>
     <modules>
-        <module>shalomalerhem-back</module>
+        <module>latinhome-back</module>
         <!--        <module>shalomalerhem-front</module>-->
     </modules>
     <properties>
